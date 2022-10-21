@@ -23,16 +23,49 @@
                 <article>
                     <h2>Flexbox Row</h2>
                     <p>The following CSS will cause the .row class to be configured as a horizontal row!</p>
+                    <!-- this wraps the code cards -->
+                    <div>                    
+                        <pre>
+                            .row {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: wrap;
+                            }
+
+                        </pre>
+                    </div>
                 </article>
 
                 <article>
                     <h2>Flexbox Column</h2>
                     <p>The following CSS will cause the .column class to be configured as a vertical column!</p>
+                    <!-- this wraps the code cards -->
+                    <div>
+                        <pre>
+                            .column {
+                                display: flex;
+                                flex-direction: column;
+                            }
+
+                        </pre>
+                    </div>
                 </article>
 
                 <article>
                     <h2>CSS Grid</h2>
-                    <p>It's possible to build a grid layout in CSS, the following with make a 12 column grid.</p>
+                    <p>It's possible to build a grid layout in CSS, the following with make a 12 column layout under class grid.</p>
+                    <!-- this wraps the code cards -->
+                    <div>
+                        <pre>
+                            .grid {
+                                display: grid;
+                                width: 100%;
+                                grip-template-columns:
+                                    repeat(12, 1fr);
+                            }
+
+                        </pre>
+                    </div>
                 </article>
             </div>
             <!-- establishes second box of 3, should be set to flex row to start -->
@@ -40,16 +73,54 @@
                 <article>
                     <h2>Linear Gradients</h2>
                     <p>The Linear Gradient function can be used in conjunction with background-image to create gradient backdrops.</p>
+                    <!-- this wraps the code cards -->
+                    <div>
+                        <pre>
+                            .background {
+                                background-image:
+                                    linear-gradient(
+                                    COLORHERE 0%,
+                                    COLORHERE 100%
+                                    )
+                            }
+                        </pre>
+                    </div>
                 </article>
 
                 <article>
                     <h2>Box Transition Glow</h2>
-                    <p>Mixing transition and box-shadow it's possible to make a glow effect.</p>
+                    <p>Mixing transition and box-shadow it's possible to make a glow effect. In this case, when hovering over the code card, it and the header glow.</p>
+                    <!-- this wraps the code cards -->
+                    <div>
+                        <pre>
+                            .code-card .card-header {
+                                boarder-radius: 8px;
+                                transition: all 0.5s
+                                ease-in-out;
+                            }
+
+                            code-card:hover,
+                            code-card:hover .card-header {
+                                box-shadow: inset
+                                    0 0 8px COLORHERE,
+                                    0 0 15px COLORHERE
+                            }
+                        </pre>
+                    </div>
                 </article>
 
                 <article>
                     <h2>Overlay Card with Title</h2>
                     <p>Using margins it's possible to title cards!</p>
+                    <!-- this wraps the code cards -->
+                    <div>
+                        <pre>
+                            .card-header {
+                                position: relative;
+                                margin-top: -20px;
+                            }
+                        </pre>
+                    </div>    
                 </article>
             </div>
         </div>
