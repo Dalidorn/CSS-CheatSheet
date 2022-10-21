@@ -1,0 +1,73 @@
+
+/* || Global || */
+
+:root {
+    /* setting up color variables to be called/changed later */
+    --primarycolor: rgb(61, 18, 61);
+    --secondarycolor: rgb(43, 43, 43);
+    --fontcolorone: white;
+    --fontcolortwo: purple;
+    --fontcolorthree: blue;
+
+}
+
+::selection {
+/* change this, alters highlighted text color and highlight color */
+
+    /* background-color: var(--bright-turquoise);
+    color: var(--outer-space); */
+  }  
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* || Body and Semantics base styling || */
+
+body {
+    background-image: linear-gradient(gray, 20%, black);
+    background-size: cover;
+}
+
+header, footer {
+    padding: 30px 0;
+    width: 95%;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    width: 95%;
+}
+
+/* || Establishing h- styling || */
+
+h1, h2, h3 {
+    color: var(--fontcolortwo);
+    margin-bottom: 7px;
+    font-weight: 750;
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+
+
+p {
+    color: var(--fontcolorthree);
+    margin-bottom: 5px;
+}
+
+pre {
+    /* making the code portion readable */
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: bold;
+    color: var(--fontcolorone);
+    line-height: 26px;
+}
